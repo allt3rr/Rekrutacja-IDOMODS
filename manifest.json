@@ -1,0 +1,22 @@
+{
+  "name": "Forma'Sint",
+  "short_name": "Forma'Sint",
+  "description": "A modern platform for outdoor and mountain sports enthusiasts.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d1d1d",
+  "icons": [
+    {
+      "src": "assets/favicon.ico",
+      "sizes": "48x48 72x72 96x96 128x128 256x256",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "assets/LOGO_FORMA.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ],
+  "lang": "en"
+}

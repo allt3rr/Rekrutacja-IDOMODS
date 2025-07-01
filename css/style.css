@@ -1,0 +1,306 @@
+@import url("swiper.css");
+@import url("items.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #1d1d1d;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+/* Style kontynera dla całej witryny */
+.container {
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-bottom: 84px;
+  max-width: 100vw;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Header/navbar style */
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 20px 42px 20px 42px;
+  cursor: default;
+  background-color: white;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  gap: 30px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  justify-self: end;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+  cursor: pointer;
+}
+.profile:hover {
+  border-bottom: 2px solid #1d1d1d;
+}
+
+.profile-icon {
+  text-transform: uppercase;
+}
+
+.logo-full {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #1d1d1d;
+  text-decoration: none;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+ul li a:hover,
+ul li a.active {
+  border-bottom: 2px solid #1d1d1d;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+/* Sekcja Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  margin-top: 82px;
+  margin-bottom: 42px;
+  width: auto;
+  max-width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Sekcja polecanych przedmiotów */
+#featured > .featured-header > h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+#featured > .featured-header > h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -1%;
+}
+
+#featured > .featured-header > h1,
+#featured > .featured-header > h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.featured-header {
+  margin-bottom: 42px;
+}
+
+/* Stylowanie widoku menu na telefonie */
+.mobile-menu-icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.mobile-menu-wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu-container {
+  background-color: white;
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 24px;
+}
+
+.mobile-menu-header > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 140% !important;
+  letter-spacing: -1%;
+}
+.mobile-menu-container > nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 24px;
+  margin-top: 80px;
+}
+
+.mobile-menu-container > nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Style stopki */
+footer {
+  font-size: 14px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  padding: 16px 0;
+}
+
+/* Style podstron, napis under maintenance */
+.work-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 42px;
+}
+.work-section > p {
+  font-size: 42px;
+}
+
+.work-section > a {
+  text-decoration: none;
+  color: #1d1d1d;
+  transition: all 0.2s linear;
+  border-bottom: 1px solid transparent;
+  font-size: 24px;
+}
+
+.work-section > a:hover {
+  border-bottom: 1px solid #1d1d1d;
+}
+
+/* Dostosowanie RWD */
+@media screen and (max-width: 1024px) {
+  .logo > span {
+    display: none;
+  }
+  .hero-image {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu-icon {
+    display: flex;
+  }
+  .profile,
+  header > nav > ul {
+    display: none;
+  }
+  .hero {
+    margin-top: 42px;
+    min-height: 80vh;
+  }
+  .hero-text {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #featured > .featured-header > h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -2%;
+  }
+  #featured > .featured-header > h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -1%;
+  }
+}

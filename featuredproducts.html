@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <meta
+      name="description"
+      content="Forma'Sint – discover our selection of featured outdoor products, clothing, and accessories. Find top picks and inspiration for your next adventure!"
+    />
+    <meta
+      name="keywords"
+      content="forma sint, featured products, outdoor, clothing, accessories, bestsellers, shop, adventure, inspiration, top picks"
+    />
+    <meta name="author" content="Forma'Sint Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Forma'Sint - Featured products</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-container">
+          <div class="mobile-menu-header">
+            <img
+              src="assets/FORMA_ICON.webp"
+              srcset="
+                assets/FORMA_ICON.webp    1x,
+                assets/FORMA_ICON@2x.webp 2x,
+                assets/FORMA_ICON@3x.webp 3x
+              "
+              class="mobile-logo-image"
+              loading="lazy"
+              alt="Logo Forma'Sint - powrót do strony głównej"
+            />
+            <button onclick="toggleMobileMenu(false)">
+              <img src="assets/ICONS=CLOSE.webp" />
+              <span>CLOSE</span>
+            </button>
+          </div>
+          <nav aria-label="Mobile navigation">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="featuredproducts.html">Featured products</a></li>
+              <li><a href="productlisting.html">Product listing</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <header>
+        <div class="logo">
+          <a class="logo-full" href="/">
+            <img
+              src="assets/FORMA_ICON.webp"
+              class="logo-image"
+              loading="lazy"
+              alt="Logo Forma'Sint - powrót do strony głównej"
+            />
+            <span class="visually-hidden">FORMA'SINT.</span>
+          </a>
+          <span>IDOMODS &lt;/&gt;</span>
+        </div>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="featuredproducts.html">Featured products</a></li>
+            <li><a href="productlisting.html">Product listing</a></li>
+          </ul>
+        </nav>
+        <div class="profile">
+          <img
+            src="assets/icon_user.webp"
+            srcset="
+              assets/icon_user.webp    1x,
+              assets/icon_user@2x.webp 2x,
+              assets/icon_user@3x.webp 3x
+            "
+            loading="lazy"
+            alt="Ikona profilu użytkownika - Frontend Developer"
+          />
+          <span class="profile-icon">Frontend Developer</span>
+        </div>
+        <div
+          class="mobile-menu-icon"
+          onclick="toggleMobileMenu(true)"
+          role="button"
+          aria-label="Open mobile menu"
+        >
+          <img
+            src="assets/MENU_ICONS.webp"
+            srcset="
+              assets/MENU_ICONS.webp    1x,
+              assets/MENU_ICONS@2x.webp 2x,
+              assets/MENU_ICONS@3x.webp 3x
+            "
+            alt="Otwórz menu mobilne"
+          />
+          <span>MENU</span>
+        </div>
+      </header>
+      <main class="work-section">
+        <p>Website under maintenance!</p>
+        <a href="/">Go back to Home</a>
+      </main>
+      <footer>
+        <span>2025 &copy; Forma'Sint</span>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
